@@ -5,7 +5,12 @@ import httpx
 from pydantic import BaseModel
 from typing import Optional
 
+from backend.app.audit import router as audit_router
+
 app = FastAPI(title="CRO-Agent API")
+
+# Include routers
+app.include_router(audit_router)
 
 # These will be loaded from .env
 SHOPIFY_API_KEY = os.getenv("SHOPIFY_API_KEY")
