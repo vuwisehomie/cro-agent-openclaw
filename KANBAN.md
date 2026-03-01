@@ -9,9 +9,8 @@
 - [ ] **Audit:** PDF Report Generation for CRO audits.
 
 ## 🏗️ IN PROGRESS
-- [ ] **CUJ 1 (Onboarding):** Persistence layer (Postgres) for Shopify Access Tokens.
-- [ ] **CUJ 2 (Audit):** Integrate Gemini Vision for landing page conversion analysis.
-- [ ] **CUJ 5 (Dashboard):** Build React KPI cards in Next.js frontend.
+- [ ] **Data Pipeline:** Set up Airbyte instance for Google Ads/Meta Ads sync.
+- [ ] **Analytics:** Initialize BigQuery schema for multi-tenant data storage.
 
 ## ✅ DONE
 - [x] Project Vision & PRD defined.
@@ -20,3 +19,6 @@
 - [x] GitHub Repository linked & initial sync.
 - [x] Shopify OAuth Login/Callback flow (Auth logic).
 - [x] Environment configuration (.env).
+- [x] **CUJ 1 (Onboarding):** Persistence layer for Shopify Access Tokens.
+- [x] **CUJ 2 (Audit):** Integrate Gemini for landing page conversion analysis.
+- [x] **CUJ 5 (Dashboard):** Build React KPI cards & Audit tool UI in Next.js.
