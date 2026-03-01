@@ -8,3 +8,5 @@ google-cloud-aiplatform
 python-multipart
 python-jose[cryptography]
 passlib[bcrypt]
+httpx
+python-dotenv
