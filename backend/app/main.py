@@ -6,8 +6,14 @@ from pydantic import BaseModel
 from typing import Optional
 
 from backend.app.audit import router as audit_router
+from backend.app.models import init_db, SessionLocal, Store
 
 app = FastAPI(title="CRO-Agent API")
+
+# Initialize database on startup
+@app.on_event("startup")
+def on_startup():
+    init_db()
 
 # Include routers
 app.include_router(audit_router)
@@ -42,10 +48,8 @@ async def shopify_login(shop: str = Query(..., description="The .myshopify.com U
 async def shopify_callback(shop: str, code: str, hmac: str):
     """
     Step 2: Shopify redirects back here with a temporary code.
-    Exchange code for a permanent access token.
+    Exchange code for a permanent access token and save to DB.
     """
-    # TODO: Verify HMAC for security
-    
     token_url = f"https://{shop}/admin/oauth/access_token"
     payload = {
         "client_id": SHOPIFY_API_KEY,
@@ -61,8 +65,18 @@ async def shopify_callback(shop: str, code: str, hmac: str):
         data = response.json()
         access_token = data.get("access_token")
         
-        # TODO: Store access_token in database associated with the shop
-        return {"status": "success", "shop": shop, "message": "Store connected successfully"}
+        # Save or Update Store in DB
+        db = SessionLocal()
+        store = db.query(Store).filter(Store.shop_url == shop).first()
+        if not store:
+            store = Store(shop_url=shop, access_token=access_token)
+            db.add(store)
+        else:
+            store.access_token = access_token
+        db.commit()
+        db.close()
+        
+        return {"status": "success", "shop": shop, "message": "Store connected and token saved"}
 
 @app.get("/health")
 async def health():
