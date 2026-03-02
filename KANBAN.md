@@ -9,8 +9,9 @@
 - [ ] **Audit:** PDF Report Generation for CRO audits.
 
 ## 🏗️ IN PROGRESS
+- [x] **Analytics:** Initialize BigQuery schema for multi-tenant data storage.
 - [ ] **Data Pipeline:** Set up Airbyte instance for Google Ads/Meta Ads sync.
-- [ ] **Analytics:** Initialize BigQuery schema for multi-tenant data storage.
+- [ ] **CUJ 3 (Funnels):** Visual Funnel Builder with drop-off visualization.
 
 ## ✅ DONE
 - [x] Project Vision & PRD defined.
