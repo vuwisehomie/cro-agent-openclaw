@@ -10,3 +10,5 @@ python-jose[cryptography]
 passlib[bcrypt]
 httpx
 python-dotenv
+qdrant-client
+sentence-transformers
