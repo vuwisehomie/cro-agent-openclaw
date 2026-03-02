@@ -1,7 +1,6 @@
-'use client';
-
 import React, { useState } from 'react';
 import { Search, Activity, BarChart3, AlertCircle } from 'lucide-react';
+import FunnelBuilder from './components/FunnelBuilder';
 
 export default function HomePage() {
   const [url, setUrl] = useState('');
@@ -104,6 +103,11 @@ export default function HomePage() {
               </div>
             </div>
           )}
+        </section>
+
+        {/* Funnel Builder (CUJ 3) */}
+        <section className="mb-12">
+          <FunnelBuilder />
         </section>
       </div>
     </main>

@@ -10,8 +10,7 @@
 
 ## 🏗️ IN PROGRESS
 - [ ] **Data Pipeline:** Set up Airbyte instance for Google Ads/Meta Ads sync.
-- [ ] **Infrastructure:** Debug Docker/Ngrok environment access.
-- [ ] **CUJ 3 (Funnels):** Visual Funnel Builder with drop-off visualization.
+- [ ] **Infrastructure:** Auth token debugging.
 
 ## ✅ DONE
 - [x] Project Vision & PRD defined.
@@ -23,3 +22,4 @@
 - [x] **CUJ 1 (Onboarding):** Persistence layer for Shopify Access Tokens.
 - [x] **CUJ 2 (Audit):** Integrate Gemini for landing page conversion analysis.
 - [x] **CUJ 5 (Dashboard):** Build React KPI cards & Audit tool UI in Next.js.
+- [x] **CUJ 3 (Funnels):** Visual Funnel Builder with drop-off visualization.
