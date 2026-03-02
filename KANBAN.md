@@ -10,7 +10,8 @@
 
 ## 🏗️ IN PROGRESS
 - [ ] **Data Pipeline:** Set up Airbyte instance for Google Ads/Meta Ads sync.
-- [ ] **CUJ 4 (AI Agent):** Conversational AI for goal setting and data Q&A.
+- [x] **CUJ 4 (AI Agent):** Conversational AI for goal setting and data Q&A.
+- [ ] **AI Agent (RAG):** Connect Qdrant for store-specific context.
 
 ## ✅ DONE
 - [x] Project Vision & PRD defined.

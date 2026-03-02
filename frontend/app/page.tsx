@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Search, Activity, BarChart3, AlertCircle } from 'lucide-react';
 import FunnelBuilder from './components/FunnelBuilder';
+import AIChatAgent from './components/AIChatAgent';
 
 export default function HomePage() {
   const [url, setUrl] = useState('');
@@ -106,8 +107,13 @@ export default function HomePage() {
         </section>
 
         {/* Funnel Builder (CUJ 3) */}
-        <section className="mb-12">
-          <FunnelBuilder />
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          <div className="lg:col-span-2">
+            <FunnelBuilder />
+          </div>
+          <div className="lg:col-span-1">
+            <AIChatAgent />
+          </div>
         </section>
       </div>
     </main>
