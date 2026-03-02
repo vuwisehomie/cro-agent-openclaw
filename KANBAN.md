@@ -9,8 +9,8 @@
 - [ ] **Audit:** PDF Report Generation for CRO audits.
 
 ## 🏗️ IN PROGRESS
-- [x] **Analytics:** Initialize BigQuery schema for multi-tenant data storage.
 - [ ] **Data Pipeline:** Set up Airbyte instance for Google Ads/Meta Ads sync.
+- [ ] **Infrastructure:** Debug Docker/Ngrok environment access.
 - [ ] **CUJ 3 (Funnels):** Visual Funnel Builder with drop-off visualization.
 
 ## ✅ DONE
