@@ -7,6 +7,7 @@ from typing import Optional
 
 from backend.app.audit import router as audit_router
 from backend.app.agent import router as agent_router
+from backend.app.payments import router as payments_router
 from backend.app.models import init_db, SessionLocal, Store
 
 app = FastAPI(title="CRO-Agent API")
@@ -19,6 +20,7 @@ def on_startup():
 # Include routers
 app.include_router(audit_router)
 app.include_router(agent_router)
+app.include_router(payments_router)
 
 # These will be loaded from .env
 SHOPIFY_API_KEY = os.getenv("SHOPIFY_API_KEY")

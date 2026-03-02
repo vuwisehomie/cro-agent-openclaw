@@ -12,3 +12,4 @@ httpx
 python-dotenv
 qdrant-client
 sentence-transformers
+stripe

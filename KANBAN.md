@@ -10,8 +10,9 @@
 
 ## 🏗️ IN PROGRESS
 - [ ] **Data Pipeline:** Set up Airbyte instance for Google Ads/Meta Ads sync.
-- [x] **Infrastructure:** Add Qdrant to Docker stack.
-- [ ] **AI Agent (RAG):** Implement vector embedding storage for audits.
+- [ ] **MVP CRITICAL:** Implement Vector RAG for Sky's long-term memory.
+- [ ] **MVP CRITICAL:** Finalize "One-Click Deploy" UI for Shopify components (CUJ 6).
+- [ ] **MVP CRITICAL:** Stripe "Starter" plan subscription logic.
 
 ## ✅ DONE
 - [x] Project Vision & PRD defined.
